@@ -1,0 +1,6 @@
+1. [Form] How to? - https://www.w3schools.com/howto/howto_css_login_form.asp
+2. Bottstrap 3 tutorials - https://www.w3schools.com/bootstrap/
+3. Bootstrap templates - https://www.w3schools.com/bootstrap/bootstrap_templates.asp
+4. Ecommerce Products cards - https://www.w3schools.com/howto/howto_css_product_card.asp
+			    - https://github.com/mdbootstrap/Ecommerce-Template-Bootstrap
+5. Products Comparison - https://codyhouse.co/gem/products-comparison-table

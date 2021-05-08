@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!----------- Bắt đầu khu vực thanh Navigation Bar ----------->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Trang chủ</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Tiện ích</a></li>
+      <li><a href="#">Chia sẻ</a></li>
+      <li><a href="#">Tin tức</a></li>
+      <li class="dropdown">
+      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      		Giới thiệu <span class="caret"></span>
+        </a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Trợ giúp</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      
+      </li>
+    </ul>
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span>Đăng ký</a></li>
+      
+      <!-- Bắt đầu Login link -->
+      <li>
+          <a href="navBarLogin.html#myModal" class="trigger-btn" data-toggle="modal">
+          	<span class="glyphicon glyphicon-log-in"></span> Đăng nhập
+          </a>
+      </li>
+      <!-- Kết thúc login link -->
+    </ul>
+  
+  </div>
+</nav>
+<!----------- Kết thúc khu vực thanh Navigation Bar ----------->
+<!----------- Bắt đầu nội dung trang -------------------------->
+<div class="container">
+  <h3>Nội dung trang</h3>
+</div>
+<!----------- Kết thúc nội dung trang -------------------------->
+
+
+<!----------- Bắt đầu form Login có id id = "myModal" ------------------------------->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<input class="form-control" placeholder="Tên đăng nhập">		
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Mật khẩu">	
+					</div>        
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Đăng nhập</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!----------- Kết thúc form Login ------------------------------->
+<!-- Lần lượt tạo các cửa sổ modal khác tiếp theo, gọi qua ID trên NavBar-->
+</body>
+</html>
